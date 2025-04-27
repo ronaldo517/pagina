@@ -1,0 +1,75 @@
+
+body {
+    
+    color: white; /* Cambia el color del texto para que contraste con el fondo */
+}
+
+.container {
+    display: flex;
+    height: 100vh; /* Asegúrate de que la altura sea completa */
+    align-items: center; /* Centra verticalmente */
+    justify-content: center; /* Centra horizontalmente */
+    opacity: 0.9; /* Opcional: agrega un poco de transparencia */
+}
+
+.left-section {
+    flex: 1;
+    display: flex;
+    align-items: center; /* Centra la imagen verticalmente */
+    justify-content: center; /* Centra la imagen horizontalmente */
+}
+
+.right-section {
+    flex: 1;
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo negro semi-transparente para el formulario */
+    padding: 20px;
+    border-radius: 10px; /* Bordes redondeados */
+    max-width: 400px; /* Ancho máximo del formulario */
+    margin: 20px; /* Margen alrededor del formulario */
+}
+
+h2 {
+    text-align: center;
+}
+
+input {
+    width: 100%; /* Hace que los inputs ocupen todo el ancho */
+    padding: 8px; /* Reducido para un tamaño más compacto */
+    margin: 8px 0; /* Reducido para un tamaño más compacto */
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco casi opaco para los inputs */
+}
+
+button {
+    width: 100%;
+    padding: 8px; /* Reducido para un tamaño más compacto */
+    background-color: #4CAF50; /* Color del botón */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049; /* Color del botón al pasar el mouse */
+}
+
+p {
+    text-align: center;
+}
+
+
+
+
+@keyframes moverFondo {
+    0% {
+        background-position: center 0;
+    }
+    30% {
+        background-position: center 50px;
+    }
+    100% {
+        background-position: center 20;
+    }
+}
